@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in with email</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-form">
+            <div class="form-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="4" fill="#1a1a1a"/>
+                    <path d="M9 6L15 12L9 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            
+            <h1 class="form-title">Sign in with email</h1>
+            <p class="form-description">Make a new doc to bring your words, data, and teams together. For free</p>
+            
+            <form class="signup-form-content">
+                <div class="input-group">
+                    <svg class="input-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.33333 5.83333C3.33333 5.0039 4.0039 4.33333 4.83333 4.33333H15.1667C15.9961 4.33333 16.6667 5.0039 16.6667 5.83333V14.1667C16.6667 14.9961 15.9961 15.6667 15.1667 15.6667H4.83333C4.0039 15.6667 3.33333 14.9961 3.33333 14.1667V5.83333Z" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.33333 5.83333L10 10.4167L16.6667 5.83333" stroke="#666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <input type="email" placeholder="Email" class="form-input" required>
+                </div>
+                
+                <div class="input-group">
+                    <svg class="input-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2.5" y="7.5" width="15" height="10" rx="2" stroke="#666" stroke-width="1.5"/>
+                        <path d="M5.83333 7.5V5.83333C5.83333 3.72375 7.55678 2 9.66667 2C11.7766 2 13.5 3.72375 13.5 5.83333V7.5" stroke="#666" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <input type="password" placeholder="Password" class="form-input" id="password-input" required>
+                    <button type="button" class="password-toggle" id="password-toggle">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.66667 10C1.66667 10 4.16667 5.83333 10 5.83333C15.8333 5.83333 18.3333 10 18.3333 10M1.66667 10C1.66667 10 4.16667 14.1667 10 14.1667C15.8333 14.1667 18.3333 10 18.3333 10M1.66667 10L18.3333 10" stroke="#666" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z" stroke="#666" stroke-width="1.5"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="forgot-password">
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+                
+                <button type="submit" class="submit-button">Get Started</button>
+            </form>
+            
+            <div class="divider">
+                <span class="divider-text">Or sign in with</span>
+            </div>
+            
+            <div class="social-login">
+                <button class="social-button google-button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.6 10.2273C19.6 9.51818 19.5364 8.83636 19.4182 8.18182H10V12.05H15.3818C15.15 13.3 14.4455 14.3591 13.3864 15.0682V17.5773H16.6182C18.5091 15.8364 19.6 13.2727 19.6 10.2273Z" fill="#4285F4"/>
+                        <path d="M10 20C12.7 20 14.9636 19.1045 16.6182 17.5773L13.3864 15.0682C12.4909 15.6682 11.3455 16.0227 10 16.0227C7.39545 16.0227 5.19091 14.2636 4.40455 11.9H1.06364V14.4909C2.70909 17.7591 6.09091 20 10 20Z" fill="#34A853"/>
+                        <path d="M4.40455 11.9C4.20455 11.3 4.09091 10.6591 4.09091 10C4.09091 9.34091 4.20455 8.7 4.40455 8.1V5.50909H1.06364C0.386364 6.85909 0 8.38636 0 10C0 11.6136 0.386364 13.1409 1.06364 14.4909L4.40455 11.9Z" fill="#FBBC05"/>
+                        <path d="M10 3.97727C11.4682 3.97727 12.7864 4.48182 13.8227 5.47273L16.6909 2.60455C14.9591 1.02273 12.6955 0 10 0C6.09091 0 2.70909 2.24091 1.06364 5.50909L4.40455 8.1C5.19091 5.73636 7.39545 3.97727 10 3.97727Z" fill="#EA4335"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
